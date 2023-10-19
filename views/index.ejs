@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en", dir="ltr">
+
+<head>
+    <meta charset=“UTF-8”>
+    <title>Coding Jokes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1>Programming Jokes 👾 </h1>
+    <div id="jokeArea">
+        <p> <%= jokeSetup %> </p>
+        <p id="delivery"> <%= jokeDelivery %> </p>
+    </div>
+    <div id="buttonArea">
+        <button type="submit" id="answer">Reveal Punchline</button>
+        <button type="submi" id="another">Another Joke</button>
+    </div>
+
+<script>
+
+const answerButton = document.getElementById("answer");
+answerButton.addEventListener('click', () => {
+  document.getElementById("delivery").style.visibility = "visible";
+});
+
+const refreshButton = document.getElementById("another");
+refreshButton.addEventListener('click', () => {
+    location.reload();
+});
+
+</script>
+
+<footer>
+    <div>
+        <p>Copyright © <%= new Date().getFullYear() %></p>
+    </div>
+</footer>
+
+</body>
+</html>
