@@ -8,13 +8,12 @@ This app is built using JavaScript and EJS in a Node.js environment. The followi
 
 You will need [Node.js](https://nodejs.org/en) installed to run the app.
 
-To confirm that node has been installed, enter the following command in the terminal.
+To confirm that node has been installed, enter the following command in the terminal:
 
 ```bash
 node -v
 ```
 You should see the version of node you have just installed.
-```
 
 ## Usage 
 
